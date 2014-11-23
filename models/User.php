@@ -3,15 +3,15 @@
  * @author Patsura Dmitry https://github.com/ovr <talk@dmtry.me>
  */
 
-namespace User\Model;
+namespace PhljUser\Model;
 
 /**
  * Class User
- * @package User\Model
+ * @package PhljUser\Model
  *
  * @Source("User__Users")
  *
- * @BelongsTo("group_id", '\User\Model\Group', "id", {
+ * @BelongsTo("group_id", '\PhljUser\Model\Group', "id", {
  *  "alias": "Group"
  * })
  */

@@ -3,11 +3,11 @@
  * @author Patsura Dmitry https://github.com/ovr <talk@dmtry.me>
  */
 
-namespace User\Model;
+namespace PhljUser\Model;
 
 /**
  * Class Group
- * @package User\Model
+ * @package PhljUser\Model
  *
  * @Source("User__Groups")
  */

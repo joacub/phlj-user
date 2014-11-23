@@ -3,7 +3,7 @@
  * @author Patsura Dmitry https://github.com/ovr <talk@dmtry.me>
  */
 
-namespace User;
+namespace PhljUser;
 
 use Phalcon\DiInterface;
 
@@ -13,8 +13,8 @@ class Module implements \Phalcon\Mvc\ModuleDefinitionInterface
     {
         $loader = new \Phalcon\Loader();
         $loader->registerNamespaces(array(
-            'User\Controller' => APPLICATION_PATH . '/modules/user/controllers/',
-            'User\Model' => APPLICATION_PATH . '/modules/user/models/',
+            'PhljUser\Controller' => 'modules/user/controllers/',
+            'PhljUser\Model' =>  'modules/user/models/',
         ));
         $loader->register();
     }
@@ -22,14 +22,14 @@ class Module implements \Phalcon\Mvc\ModuleDefinitionInterface
     public function registerServices(DiInterface $dependencyInjector)
     {
         $dispatcher = $dependencyInjector->get('dispatcher');
-        $dispatcher->setDefaultNamespace('User\Controller');
+        $dispatcher->setDefaultNamespace('PhljUser\Controller');
 
         /**
          * @var $view \Phalcon\Mvc\View
          */
         $view = $dependencyInjector->get('view');
         $view->setLayout('index');
-        $view->setViewsDir(APPLICATION_PATH . '/modules/user/views/');
+        $view->setViewsDir('modules/user/views/');
         $view->setLayoutsDir('../../common/layouts/');
         $view->setPartialsDir('../../common/partials/');
 

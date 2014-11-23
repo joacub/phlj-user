@@ -1,0 +1,27 @@
+{
+    "name": "joacub/phlj-user",
+    "description": "Modulo for phalcon 2",
+    "url": "https://github.com/joacub/phlj-user",
+    "license": "MIT",
+    "type": "project",
+    "keywords": [
+        "framework",
+        "phalcon"
+    ],
+    "require": {
+        "php": "~5.4",
+        "ext-json": "*",
+        "joacub/phalcony": "~0.2.4"
+    },
+    "authors": [
+        {
+            "name": "Joacub",
+            "email": "joacub@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Phalcony\\": "src"
+        }
+    }
+}

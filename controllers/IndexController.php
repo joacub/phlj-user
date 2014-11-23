@@ -1,14 +1,14 @@
 <?php
 
-namespace User\Controller;
+namespace PhljUser\Controller;
 
 use Phalcon\Exception;
 use Phalcon\Mvc\Controller;
-use User\Model\User;
+use PhljUser\Model\User;
 
 /**
  * Class IndexController
- * @package User\Controller
+ * @package PhljUser\Controller
  */
 class IndexController extends Controller
 {
